@@ -1,1 +1,5 @@
+pages/locators/AutomationPracticeAuthenticationPageLocators.class
+pages/actions/AutomationPracticeAuthenticationPageActions.class
 utils/SeleniumDriver.class
+pages/locators/AutomationPracticeLandingPageLocators.class
+pages/actions/AutomationPracticeLandingPageActions.class

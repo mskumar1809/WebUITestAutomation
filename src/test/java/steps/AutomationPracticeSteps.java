@@ -1,11 +1,11 @@
 package steps;
 
-import org.junit.Test;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.actions.AutomationPracticeAuthenticationPageActions;
 import pages.actions.AutomationPracticeLandingPageActions;
 
 import utils.SeleniumDriver;
@@ -13,6 +13,7 @@ import utils.SeleniumDriver;
 public class AutomationPracticeSteps {
 
     AutomationPracticeLandingPageActions automationPracticeLandingPageActions = new AutomationPracticeLandingPageActions();
+    AutomationPracticeAuthenticationPageActions automationPracticeAuthenticationPageActions = new AutomationPracticeAuthenticationPageActions();
     
   
     @Given("^the user is on the home page \"([^\"]*)\"$")
@@ -26,10 +27,10 @@ public class AutomationPracticeSteps {
     public void entersTheUnderField(String fieldName, String userInput) {
         switch (fieldName) {
             case "emailaddress":
-                automationPracticeLandingPageActions.enterEmailAddress(userInput);
+                automationPracticeAuthenticationPageActions.enterEmailAddress(userInput);
                 break;
             case "password":
-                automationPracticeLandingPageActions.enterPassword(userInput);
+                automationPracticeAuthenticationPageActions.enterPassword(userInput);
                 break;
         }
     }
@@ -42,7 +43,7 @@ public class AutomationPracticeSteps {
                 automationPracticeLandingPageActions.clickOnSignInButton();
                 break;
             case "Submit":
-                automationPracticeLandingPageActions.clickOnSubmitButton();
+                automationPracticeAuthenticationPageActions.clickOnSubmitButton();
                 break;
         }
     }
@@ -54,14 +55,14 @@ public class AutomationPracticeSteps {
             case "InvalidPassword":
             case "InvalidEmail":
             case "InvalidDetails":
-                automationPracticeLandingPageActions.verifyTheAuthenticationFailed();
+                automationPracticeAuthenticationPageActions.verifyTheAuthenticationFailed();
                 break;
             case "BlankPassword":
-                automationPracticeLandingPageActions.verifyThePasswordRequired();
+                automationPracticeAuthenticationPageActions.verifyThePasswordRequired();
                 break;
             case "BlankEmail":
             case "BlankDetails":
-                automationPracticeLandingPageActions.verifyTheEmailRequired();
+                automationPracticeAuthenticationPageActions.verifyTheEmailRequired();
                 break;
             case "Successful":
                 break;

@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e5b8c4-1757-49f2-900a-2b4ab2c5c7b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeAuthenticationPageActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeAuthenticationPageLocators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeLandingPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeLandingPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeLandingPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeLandingPageLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AutomationPracticeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AutomationPracticeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +81,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Maven.ZulhkeTestAutomation" />
       <item itemvalue="JUnit.All in ZulhkeTestAutomation" />
+      <item itemvalue="Maven.ZulhkeTestAutomation" />
     </list>
     <recent_temporary>
       <list>
