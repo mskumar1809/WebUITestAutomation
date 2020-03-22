@@ -19,3 +19,10 @@ Feature: Acceptance Testing to validate the user login and shopping cart functio
       |                        | Helloworld12345        | BlankEmail      |
       | mskumar09181@gmail.com | Helloworld12345        | InvalidDetails  |
       |                        |                        | BlankDetails    |
+
+#  @shopping
+#  Scenario: Verify the basic add to cart functionality
+#    Given the user is on the home page "http://automationpractice.com/index.php"
+#    When the user logs into the application successfully
+
+

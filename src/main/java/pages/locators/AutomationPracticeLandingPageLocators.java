@@ -24,34 +24,4 @@ public class AutomationPracticeLandingPageLocators {
     @FindBy(how = How.CSS, using="#center_column > h1")
     public WebElement myAccount;
 
-    @FindBy(how = How.CSS, using="#traffic-markup-analysis")
-    public WebElement advancedTrafficMarkupCheckBox;
-
-    @FindBy(how = How.CSS, using="#tried-test-cafe")
-    public WebElement triedTestCafeCheckBox;
-
-    @FindBy(how = How.CSS, using="#slider > span")
-    public WebElement slider;
-
-    @FindBy(how = How.CSS, using="#windows")
-    public WebElement windowsRadioButton;
-
-    @FindBy(how = How.CSS, using="#macos")
-    public WebElement macOsRadioButton;
-
-    @FindBy(how = How.CSS, using="#linux")
-    public WebElement linuxRadioButton;
-
-    @FindBy(how = How.CSS, using="#preferred-interface")
-    public WebElement preferredInterfaceDropDown;
-
-    @FindBy(how = How.CSS, using="#option")
-    public WebElement option;
-
-    @FindBy(how = How.CSS, using="#comments")
-    public WebElement commentsFreeTextField;
-
-    @FindBy(how = How.CSS, using="#submit-button")
-    public WebElement submitButton;
-
 }

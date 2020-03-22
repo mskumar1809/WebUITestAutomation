@@ -1,11 +1,12 @@
 package pages.actions;
 
-import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
 import pages.locators.AutomationPracticeLandingPageLocators;
 import utils.SeleniumDriver;
 
 import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
 
 public class AutomationPracticeLandingPageActions {
 
@@ -25,6 +26,7 @@ public class AutomationPracticeLandingPageActions {
         automationPracticeLandingPageLocators.signInButton.click();
         assertTrue(automationPracticeLandingPageLocators.emailTextField.isDisplayed());
     }
+    
 
     public void enterEmailAddress(String emailAddress) {
         automationPracticeLandingPageLocators.emailTextField.sendKeys(emailAddress);

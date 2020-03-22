@@ -1,19 +1,20 @@
 package steps;
 
+import org.junit.Test;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.actions.AutomationPracticeLandingPageActions;
-import pages.locators.AutomationPracticeLandingPageLocators;
+
 import utils.SeleniumDriver;
 
 public class AutomationPracticeSteps {
 
     AutomationPracticeLandingPageActions automationPracticeLandingPageActions = new AutomationPracticeLandingPageActions();
-
+    
+  
     @Given("^the user is on the home page \"([^\"]*)\"$")
     public void theUserIsOnTheHomePage(String BaseURL)   {
         SeleniumDriver.openPage(BaseURL);
@@ -21,6 +22,7 @@ public class AutomationPracticeSteps {
     }
 
     @And("^the user enters the \"([^\"]*)\" under \"([^\"]*)\" field$")
+  
     public void entersTheUnderField(String fieldName, String userInput) {
         switch (fieldName) {
             case "emailaddress":
@@ -33,6 +35,7 @@ public class AutomationPracticeSteps {
     }
 
     @When("^the user clicks on the \"([^\"]*)\" button$")
+   
     public void theUserClicksOnTheButton(String buttonName)  {
         switch (buttonName) {
             case "SignIn":
@@ -45,6 +48,7 @@ public class AutomationPracticeSteps {
     }
 
     @Then("^the user should see the corresponding \"([^\"]*)\"$")
+   
     public void theUserShouldSeeTheCorresponding(String expected) {
         switch (expected) {
             case "InvalidPassword":
