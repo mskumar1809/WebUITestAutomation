@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4e5b8c4-1757-49f2-900a-2b4ab2c5c7b8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Substep Feature" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZTXgxtIJVyn8AZM9TAKi2ybHTe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager" selected="JUnit.All in ZulhkeTestAutomation">
+    <configuration name="All in ZulhkeTestAutomation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZulhkeTestAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZulhkeTestAutomation" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.ZulhkeTestAutomation" />
+      <item itemvalue="JUnit.All in ZulhkeTestAutomation" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in ZulhkeTestAutomation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4e5b8c4-1757-49f2-900a-2b4ab2c5c7b8" name="Default Changelist" comment="" />
+      <created>1584864172176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584864172176</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584871901709">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="184" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.800@0.23.1440.800" timestamp="1584871901709" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom" timestamp="1584879633016">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1584872414671" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1584879633016" />
+    <state width="1358" height="194" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1584873909417" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center" timestamp="1584879633015">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1584872414670" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1584879633015" />
+    <state width="1358" height="194" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1584873909417" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left" timestamp="1584879633015">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1584872414670" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1584879633015" />
+    <state width="1358" height="194" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1584873909416" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right" timestamp="1584879633015">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1584872414671" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1584879633015" />
+    <state width="1358" height="194" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1584873909417" />
+    <state width="1358" height="241" key="GridCell.Tab.1.bottom" timestamp="1584876725700">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.1.bottom/0.23.1440.800@0.23.1440.800" timestamp="1584872414673" />
+    <state width="1358" height="241" key="GridCell.Tab.1.bottom/0.23.1440.803@0.23.1440.803" timestamp="1584876725700" />
+    <state width="1358" height="241" key="GridCell.Tab.1.bottom/0.23.1440.805@0.23.1440.805" timestamp="1584876206516" />
+    <state width="1358" height="241" key="GridCell.Tab.1.center" timestamp="1584876725699">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.1.center/0.23.1440.800@0.23.1440.800" timestamp="1584872414672" />
+    <state width="1358" height="241" key="GridCell.Tab.1.center/0.23.1440.803@0.23.1440.803" timestamp="1584876725699" />
+    <state width="1358" height="241" key="GridCell.Tab.1.center/0.23.1440.805@0.23.1440.805" timestamp="1584876206515" />
+    <state width="1358" height="241" key="GridCell.Tab.1.left" timestamp="1584876725699">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.1.left/0.23.1440.800@0.23.1440.800" timestamp="1584872414672" />
+    <state width="1358" height="241" key="GridCell.Tab.1.left/0.23.1440.803@0.23.1440.803" timestamp="1584876725699" />
+    <state width="1358" height="241" key="GridCell.Tab.1.left/0.23.1440.805@0.23.1440.805" timestamp="1584876206514" />
+    <state width="1358" height="241" key="GridCell.Tab.1.right" timestamp="1584876725700">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.800@0.23.1440.800" timestamp="1584872414672" />
+    <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.803@0.23.1440.803" timestamp="1584876725700" />
+    <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.805@0.23.1440.805" timestamp="1584876206515" />
+    <state x="477" y="355" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1584871501032">
+      <screen x="0" y="23" width="1440" height="800" />
+    </state>
+    <state x="477" y="355" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.800@0.23.1440.800" timestamp="1584871501032" />
+  </component>
+</project>

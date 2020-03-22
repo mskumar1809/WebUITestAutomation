@@ -1,0 +1,1187 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3042404151,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate the Test Cafe Example page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality;validate-the-test-cafe-example-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 169964102,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6900721029,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 30
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserIsOnTheHomePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1781916807,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks on the \"SignIn\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165618121,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters the \"emailaddress\" under \"mskumar0918@gmail.com\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "emailaddress",
+                  "offset": 21
+                },
+                {
+                  "val": "mskumar0918@gmail.com",
+                  "offset": 42
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152909440,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the \"password\" under \"Helloworld1234\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 21
+                },
+                {
+                  "val": "Helloworld1234",
+                  "offset": 38
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1640644410,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on the \"Submit\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submit",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91306,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the corresponding \"Successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Successful",
+                  "offset": 39
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserShouldSeeTheCorresponding(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TestCafeExample"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2014950243,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validate the Test Cafe Example page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality;validate-the-test-cafe-example-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 274616813,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7071222342,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 30
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserIsOnTheHomePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2235883508,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks on the \"SignIn\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164362750,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters the \"emailaddress\" under \"mskumar0918@gmail.com\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "emailaddress",
+                  "offset": 21
+                },
+                {
+                  "val": "mskumar0918@gmail.com",
+                  "offset": 42
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131283726,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the \"password\" under \"Helloworld12345\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 21
+                },
+                {
+                  "val": "Helloworld12345",
+                  "offset": 38
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1161831089,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on the \"Submit\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submit",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38691911,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the corresponding \"InvalidPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "InvalidPassword",
+                  "offset": 39
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserShouldSeeTheCorresponding(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TestCafeExample"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1462900890,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validate the Test Cafe Example page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality;validate-the-test-cafe-example-page;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 135443667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6842278935,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 30
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserIsOnTheHomePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1782430605,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks on the \"SignIn\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161898201,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters the \"emailaddress\" under \"mskumar09181@gmail.com\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "emailaddress",
+                  "offset": 21
+                },
+                {
+                  "val": "mskumar09181@gmail.com",
+                  "offset": 42
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133615872,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the \"password\" under \"Helloworld12345\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 21
+                },
+                {
+                  "val": "Helloworld12345",
+                  "offset": 38
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 809312801,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on the \"Submit\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submit",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31390008,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the corresponding \"InvalidEmail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "InvalidEmail",
+                  "offset": 39
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserShouldSeeTheCorresponding(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TestCafeExample"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1341246865,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validate the Test Cafe Example page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality;validate-the-test-cafe-example-page;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 157871884,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7032557328,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 30
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserIsOnTheHomePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2185172849,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks on the \"SignIn\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154124187,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters the \"emailaddress\" under \"mskumar0918@gmail.com\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "emailaddress",
+                  "offset": 21
+                },
+                {
+                  "val": "mskumar0918@gmail.com",
+                  "offset": 42
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59983383,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the \"password\" under \"\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 21
+                },
+                {
+                  "val": "",
+                  "offset": 38
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1186952925,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on the \"Submit\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submit",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35354693,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the corresponding \"BlankPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BlankPassword",
+                  "offset": 39
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserShouldSeeTheCorresponding(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TestCafeExample"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1347397375,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validate the Test Cafe Example page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality;validate-the-test-cafe-example-page;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 139691649,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7258292585,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 30
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserIsOnTheHomePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2072955026,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks on the \"SignIn\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62762791,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters the \"emailaddress\" under \"\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "emailaddress",
+                  "offset": 21
+                },
+                {
+                  "val": "",
+                  "offset": 42
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139940867,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the \"password\" under \"Helloworld12345\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 21
+                },
+                {
+                  "val": "Helloworld12345",
+                  "offset": 38
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1297065660,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on the \"Submit\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submit",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37774221,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the corresponding \"BlankEmail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BlankEmail",
+                  "offset": 39
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserShouldSeeTheCorresponding(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TestCafeExample"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1294323831,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validate the Test Cafe Example page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality;validate-the-test-cafe-example-page;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 139306209,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7637325366,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 30
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserIsOnTheHomePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1865625475,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks on the \"SignIn\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160205702,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters the \"emailaddress\" under \"mskumar09181@gmail.com\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "emailaddress",
+                  "offset": 21
+                },
+                {
+                  "val": "mskumar09181@gmail.com",
+                  "offset": 42
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117942064,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the \"password\" under \"Helloworld12345\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 21
+                },
+                {
+                  "val": "Helloworld12345",
+                  "offset": 38
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1121531820,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on the \"Submit\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submit",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38416100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the corresponding \"InvalidDetails\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "InvalidDetails",
+                  "offset": 39
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserShouldSeeTheCorresponding(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TestCafeExample"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1319639703,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Validate the Test Cafe Example page",
+        "description": "",
+        "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality;validate-the-test-cafe-example-page;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 133438763,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7302149444,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 30
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserIsOnTheHomePage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2278232142,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user clicks on the \"SignIn\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62039943,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters the \"emailaddress\" under \"\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "emailaddress",
+                  "offset": 21
+                },
+                {
+                  "val": "",
+                  "offset": 42
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69677262,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the \"password\" under \"\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 21
+                },
+                {
+                  "val": "",
+                  "offset": 38
+                }
+              ],
+              "location": "AutomationPracticeSteps.entersTheUnderField(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1063051440,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user clicks on the \"Submit\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submit",
+                  "offset": 24
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserClicksOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33230389,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should see the corresponding \"BlankDetails\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BlankDetails",
+                  "offset": 39
+                }
+              ],
+              "location": "AutomationPracticeSteps.theUserShouldSeeTheCorresponding(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@TestCafeExample"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance Testing to validate the user login and shopping cart functionality",
+    "description": "",
+    "id": "acceptance-testing-to-validate-the-user-login-and-shopping-cart-functionality",
+    "keyword": "Feature",
+    "uri": "Shopping.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@TestCafeExample"
+      }
+    ]
+  }
+]

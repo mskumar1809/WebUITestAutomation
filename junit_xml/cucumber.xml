@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="87.451662">
+<testcase classname="Acceptance Testing to validate the user login and shopping cart functionality" name="Validate the Test Cafe Example page" time="13.854269">
+<system-out><![CDATA[Given the user is on the home page "http://automationpractice.com/index.php".passed
+When the user clicks on the "SignIn" button.................................passed
+And the user enters the "emailaddress" under "mskumar0918@gmail.com" field..passed
+And the user enters the "password" under "Helloworld1234" field.............passed
+And the user clicks on the "Submit" button..................................passed
+Then the user should see the corresponding "Successful".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance Testing to validate the user login and shopping cart functionality" name="Validate the Test Cafe Example page 2" time="13.092842">
+<system-out><![CDATA[Given the user is on the home page "http://automationpractice.com/index.php".passed
+When the user clicks on the "SignIn" button.................................passed
+And the user enters the "emailaddress" under "mskumar0918@gmail.com" field..passed
+And the user enters the "password" under "Helloworld12345" field............passed
+And the user clicks on the "Submit" button..................................passed
+Then the user should see the corresponding "InvalidPassword"................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance Testing to validate the user login and shopping cart functionality" name="Validate the Test Cafe Example page 3" time="11.359271">
+<system-out><![CDATA[Given the user is on the home page "http://automationpractice.com/index.php".passed
+When the user clicks on the "SignIn" button.................................passed
+And the user enters the "emailaddress" under "mskumar09181@gmail.com" field.passed
+And the user enters the "password" under "Helloworld12345" field............passed
+And the user clicks on the "Submit" button..................................passed
+Then the user should see the corresponding "InvalidEmail"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance Testing to validate the user login and shopping cart functionality" name="Validate the Test Cafe Example page 4" time="12.153264">
+<system-out><![CDATA[Given the user is on the home page "http://automationpractice.com/index.php".passed
+When the user clicks on the "SignIn" button.................................passed
+And the user enters the "emailaddress" under "mskumar0918@gmail.com" field..passed
+And the user enters the "password" under "" field...........................passed
+And the user clicks on the "Submit" button..................................passed
+Then the user should see the corresponding "BlankPassword"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance Testing to validate the user login and shopping cart functionality" name="Validate the Test Cafe Example page 5" time="12.35588">
+<system-out><![CDATA[Given the user is on the home page "http://automationpractice.com/index.php".passed
+When the user clicks on the "SignIn" button.................................passed
+And the user enters the "emailaddress" under "" field.......................passed
+And the user enters the "password" under "Helloworld12345" field............passed
+And the user clicks on the "Submit" button..................................passed
+Then the user should see the corresponding "BlankEmail".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance Testing to validate the user login and shopping cart functionality" name="Validate the Test Cafe Example page 6" time="12.374677">
+<system-out><![CDATA[Given the user is on the home page "http://automationpractice.com/index.php".passed
+When the user clicks on the "SignIn" button.................................passed
+And the user enters the "emailaddress" under "mskumar09181@gmail.com" field.passed
+And the user enters the "password" under "Helloworld12345" field............passed
+And the user clicks on the "Submit" button..................................passed
+Then the user should see the corresponding "InvalidDetails".................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance Testing to validate the user login and shopping cart functionality" name="Validate the Test Cafe Example page 7" time="12.261459">
+<system-out><![CDATA[Given the user is on the home page "http://automationpractice.com/index.php".passed
+When the user clicks on the "SignIn" button.................................passed
+And the user enters the "emailaddress" under "" field.......................passed
+And the user enters the "password" under "" field...........................passed
+And the user clicks on the "Submit" button..................................passed
+Then the user should see the corresponding "BlankDetails"...................passed
+]]></system-out>
+</testcase>
+</testsuite>
