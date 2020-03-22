@@ -1,8 +1,8 @@
-@TestCafeExample
+@AutomationPractice
 Feature: Acceptance Testing to validate the user login and shopping cart functionality
 
-  @tag1
-  Scenario Outline: Validate the Test Cafe Example page
+  @login
+  Scenario Outline: Validate the login functionality of Automation Practice
     Given the user is on the home page "http://automationpractice.com/index.php"
     When the user clicks on the "SignIn" button
     And the user enters the "emailaddress" under "<emailaddress>" field
