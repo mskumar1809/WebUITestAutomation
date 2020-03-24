@@ -96,6 +96,11 @@ public class AutomationPracticeSteps {
         automationPracticeProductDetailsPageActions.chooseTheDesiredProduct(dressNameArray, quantityArray, sizeArray );
 
     }
+
+    @Then("^the user can see the Shopping-Cart \"([^\"]*)\" form with valid information$")
+    public void theUserCanSeeTheShoppingCartFormWithValidInformation(String arg0)   {
+
+    }
 }
 
 

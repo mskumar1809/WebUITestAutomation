@@ -27,10 +27,10 @@ Feature: Acceptance Testing to validate the user login and shopping cart functio
     And the user clicks on the "Women" button
     And the user chooses the products with desired details "<dress name>", "<quantity>", "<size>"
     And the user clicks on the "cart" button
-
-#    Then the user can see the Shopping-Cart "Your shopping cart" form with valid information
+    Then the user can see the Shopping-Cart "Your shopping cart" form with valid information
 #
   Examples:
-    | dress name                          | quantity | size |
+    | dress name                          | quantity | size  |
     | Faded Short Sleeve T-shirts, Blouse | 1, 5     | S, L  |
-#    | Blouse                      | 2        | S    | Black  |
+    | Blouse                              | 2        | S     |
+

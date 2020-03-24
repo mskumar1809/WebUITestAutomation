@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import pages.locators.AutomationPracticeLandingPageLocators;
 import pages.locators.AutomationPracticeProductDetailsPageLocators;
+
 import utils.SeleniumDriver;
-import static org.junit.Assert.assertTrue;
+
+import static org.junit.Assert.*;
 
 public class AutomationPracticeProductDetailsPageActions {
     AutomationPracticeProductDetailsPageLocators automationPracticeProductDetailsPageLocators = null;
@@ -26,7 +27,7 @@ public class AutomationPracticeProductDetailsPageActions {
 
     }
 
-    public void chooseTheDesiredProduct(String[] productName, String [] quantityArray, String [] sizeArray){
+    public void chooseTheDesiredProduct(String[] productName, String [] quantityArray, String [] sizeArray) throws InterruptedException {
         int index = 0;
         for (String dressName: productName) {
             WebElement ProductToSelect = SeleniumDriver.getDriver().findElement(new By.ByXPath
@@ -39,7 +40,7 @@ public class AutomationPracticeProductDetailsPageActions {
             clickOnAddToCart();
             clickOnContinueShopping();
             index++;
-            SeleniumDriver.getDriver().navigate().back();
+            returnToProductDetails();
         }
 
     }
@@ -55,6 +56,7 @@ public class AutomationPracticeProductDetailsPageActions {
         String textValue = sizeArray[index];
         Select dropdown = new Select(automationPracticeProductDetailsPageLocators.sizeDropdown);
         dropdown.selectByVisibleText(textValue);
+        System.out.println(dropdown.getFirstSelectedOption());
     }
 
     public void clickOnAddToCart(){
@@ -67,11 +69,25 @@ public class AutomationPracticeProductDetailsPageActions {
     public void clickOnContinueShopping() {
         SeleniumDriver.getWaitDriver().until(ExpectedConditions.elementToBeClickable(automationPracticeProductDetailsPageLocators.continueShoppingButton));
         automationPracticeProductDetailsPageLocators.continueShoppingButton.click();
+        assertTrue(automationPracticeProductDetailsPageLocators.addToCart.isDisplayed());
+
     }
 
     public void clickOnCart() {
         SeleniumDriver.getWaitDriver().until(ExpectedConditions.elementToBeClickable(automationPracticeProductDetailsPageLocators.shoppingCartButton));
         automationPracticeProductDetailsPageLocators.shoppingCartButton.click();
+        assertTrue(SeleniumDriver.getDriver().findElement(By.xpath("//*[@id='center_column']/p[2]/a[1]")).isDisplayed());
+
+    }
+
+    public void returnToProductDetails() throws InterruptedException {
+        String currentUrl = SeleniumDriver.getDriver().getCurrentUrl();
+        if(currentUrl.contains("id_product")){
+            SeleniumDriver.getDriver().navigate().to("http://automationpractice.com/index.php?id_category=3&controller=category");
+        }
+        SeleniumDriver.getWaitDriver().until(ExpectedConditions.visibilityOf(automationPracticeProductDetailsPageLocators.womenLogo));
+        assertTrue(automationPracticeProductDetailsPageLocators.womenLogo.isDisplayed());
+
     }
 
 }

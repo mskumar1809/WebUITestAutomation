@@ -8,15 +8,6 @@ import java.util.List;
 
 public class AutomationPracticeProductDetailsPageLocators {
 
-    @FindBy(how = How.XPATH, using = "//div[@class='right-block']//a[@class='product-name']")
-    public List<WebElement> productNames;
-
-    @FindBy(how = How.XPATH, using = "//div[@class='right-block']//div[@class='content_price']//span[@class='price product-price']")
-    public List<WebElement> productPrices;
-
-    @FindBy(how = How.XPATH, using = "//span[@id='our_price_display']")
-    public WebElement productPrice;
-
     @FindBy(how = How.XPATH, using = "//h1[@itemprop='name']")
     public WebElement productName;
 
@@ -55,4 +46,10 @@ public class AutomationPracticeProductDetailsPageLocators {
 
     @FindBy(how = How.XPATH, using = "//*[@title='View my shopping cart']")
     public WebElement shoppingCartButton;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='subcategories']/ul/li[1]/div[1]/a")
+    public WebElement topsCategory;
+
+
+
 }

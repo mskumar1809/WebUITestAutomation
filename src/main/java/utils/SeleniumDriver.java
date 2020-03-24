@@ -44,7 +44,6 @@ public class SeleniumDriver {
             caps.setCapability("os", "OS X");
             caps.setCapability("os_version", "Catalina");
             caps.setCapability("browser", "Chrome");
-            // caps.setCapability("resolution", "1920*1080");
             caps.setCapability("browser_version", "80.0");
             caps.setCapability("project", "NTUC Web Automation");
             caps.setCapability("build", "Build: "+ LocalDate.now());
