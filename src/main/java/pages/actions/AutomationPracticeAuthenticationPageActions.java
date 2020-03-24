@@ -36,6 +36,7 @@ public class AutomationPracticeAuthenticationPageActions {
     }
 
     public void clickOnSubmitButton(){
+
         automationPracticeAuthenticationPageLocators.SubmitLoginButton.click();
     }
 

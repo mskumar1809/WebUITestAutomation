@@ -1,7 +1,6 @@
 package pages.actions;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,7 +26,7 @@ public class AutomationPracticeProductDetailsPageActions {
 
     }
 
-    public void chooseTheDesiredProduct(String[] productName, String [] quantityArray, String [] sizeArray) throws InterruptedException {
+    public void chooseTheDesiredProduct(String[] productName, String [] quantityArray, String [] sizeArray) {
         int index = 0;
         for (String dressName: productName) {
             WebElement ProductToSelect = SeleniumDriver.getDriver().findElement(new By.ByXPath
@@ -80,15 +79,16 @@ public class AutomationPracticeProductDetailsPageActions {
 
     }
 
-    public void returnToProductDetails() throws InterruptedException {
+    public void returnToProductDetails()  {
         String currentUrl = SeleniumDriver.getDriver().getCurrentUrl();
         if(currentUrl.contains("id_product")){
             SeleniumDriver.getDriver().navigate().to("http://automationpractice.com/index.php?id_category=3&controller=category");
         }
         SeleniumDriver.getWaitDriver().until(ExpectedConditions.visibilityOf(automationPracticeProductDetailsPageLocators.womenLogo));
         assertTrue(automationPracticeProductDetailsPageLocators.womenLogo.isDisplayed());
-
     }
+
+
 
 }
 

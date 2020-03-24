@@ -11,6 +11,7 @@ import pages.actions.AutomationPracticeAuthenticationPageActions;
 import pages.actions.AutomationPracticeLandingPageActions;
 
 import pages.actions.AutomationPracticeProductDetailsPageActions;
+import pages.actions.AutomationPracticeShoppingCartPageActions;
 import utils.SeleniumDriver;
 
 public class AutomationPracticeSteps {
@@ -19,6 +20,7 @@ public class AutomationPracticeSteps {
     AutomationPracticeLandingPageActions automationPracticeLandingPageActions = new AutomationPracticeLandingPageActions();
     AutomationPracticeAuthenticationPageActions automationPracticeAuthenticationPageActions = new AutomationPracticeAuthenticationPageActions();
     AutomationPracticeProductDetailsPageActions automationPracticeProductDetailsPageActions = new AutomationPracticeProductDetailsPageActions();
+    AutomationPracticeShoppingCartPageActions automationPracticeShoppingCartPageActions = new AutomationPracticeShoppingCartPageActions();
 
     @Given("^the user is on the home page \"([^\"]*)\"$")
     public void theUserIsOnTheHomePage(String BaseURL)   {
@@ -85,6 +87,8 @@ public class AutomationPracticeSteps {
         automationPracticeLandingPageActions.clickOnSignInButton();
         automationPracticeAuthenticationPageActions.enterEmailAddress(emailAddress);
         automationPracticeAuthenticationPageActions.enterPassword(password);
+        automationPracticeAuthenticationPageActions.clickOnSubmitButton();
+
     }
 
 
@@ -97,9 +101,14 @@ public class AutomationPracticeSteps {
 
     }
 
-    @Then("^the user can see the Shopping-Cart \"([^\"]*)\" form with valid information$")
-    public void theUserCanSeeTheShoppingCartFormWithValidInformation(String arg0)   {
 
+    @Then("^the user should see the Shopping-Cart with selected values of \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void theUserShouldSeeTheShoppingCartWithSelectedValuesOfAnd(String dressNames, String quantities, String size)  {
+        String[] sizeArray = size.split(", ");
+        String[] dressNameArray = dressNames.split(", ");
+        String[] quantityArray = quantities.split(", ");
+        automationPracticeShoppingCartPageActions.verifyTheProductNamesInShoppingCart(dressNameArray);
+        automationPracticeShoppingCartPageActions.verifyTheProductsSizeInShoppingCart(sizeArray);
     }
 }
 
