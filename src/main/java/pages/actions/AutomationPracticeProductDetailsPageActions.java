@@ -28,12 +28,23 @@ public class AutomationPracticeProductDetailsPageActions {
 
     public void chooseTheDesiredProduct(String[] productName, String [] quantityArray, String [] sizeArray) {
         int index = 0;
+        WebElement ProductToSelect;
         for (String dressName: productName) {
-            WebElement ProductToSelect = SeleniumDriver.getDriver().findElement(new By.ByXPath
-                    ("//div[@id='center_column']//a[@class='product-name' and contains(text(),'" + dressName + "')]"));
+            switch (dressName) {
+                case "Printed Dress1":
+                    ProductToSelect = automationPracticeProductDetailsPageLocators.printedDress1;
+                    break;
+                case "Printed Summer Dress1":
+                    ProductToSelect = automationPracticeProductDetailsPageLocators.printedSummerDress1;
+                    break;
+                default:
+                    ProductToSelect = SeleniumDriver.getDriver().findElement(new By.ByXPath
+                            ("//div[@id='center_column']//a[@class='product-name' and contains(text(),'" + dressName + "')]"));
+
+            }
             SeleniumDriver.getWaitDriver().until(ExpectedConditions.elementToBeClickable(ProductToSelect));
             ProductToSelect.click();
-            assertTrue(automationPracticeProductDetailsPageLocators.productName.getText().toLowerCase().contentEquals(dressName.toLowerCase()));
+            assertTrue(dressName.toLowerCase().contains(automationPracticeProductDetailsPageLocators.productName.getText().toLowerCase()));
             setQuantity(index, quantityArray);
             setSize(index, sizeArray);
             clickOnAddToCart();

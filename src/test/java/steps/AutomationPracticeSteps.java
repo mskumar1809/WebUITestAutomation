@@ -109,6 +109,7 @@ public class AutomationPracticeSteps {
         String[] quantityArray = quantities.split(", ");
         automationPracticeShoppingCartPageActions.verifyTheProductNamesInShoppingCart(dressNameArray);
         automationPracticeShoppingCartPageActions.verifyTheProductsSizeInShoppingCart(sizeArray);
+        automationPracticeShoppingCartPageActions.verifyTheProductQuantities(quantityArray);
     }
 }
 
