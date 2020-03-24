@@ -1,5 +1,7 @@
 package steps;
 
+import cucumber.api.PendingException;
+import org.junit.Test;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -8,14 +10,16 @@ import cucumber.api.java.en.When;
 import pages.actions.AutomationPracticeAuthenticationPageActions;
 import pages.actions.AutomationPracticeLandingPageActions;
 
+import pages.actions.AutomationPracticeProductDetailsPageActions;
 import utils.SeleniumDriver;
 
 public class AutomationPracticeSteps {
 
+
     AutomationPracticeLandingPageActions automationPracticeLandingPageActions = new AutomationPracticeLandingPageActions();
     AutomationPracticeAuthenticationPageActions automationPracticeAuthenticationPageActions = new AutomationPracticeAuthenticationPageActions();
-    
-  
+    AutomationPracticeProductDetailsPageActions automationPracticeProductDetailsPageActions = new AutomationPracticeProductDetailsPageActions();
+
     @Given("^the user is on the home page \"([^\"]*)\"$")
     public void theUserIsOnTheHomePage(String BaseURL)   {
         SeleniumDriver.openPage(BaseURL);
@@ -23,7 +27,7 @@ public class AutomationPracticeSteps {
     }
 
     @And("^the user enters the \"([^\"]*)\" under \"([^\"]*)\" field$")
-  
+
     public void entersTheUnderField(String fieldName, String userInput) {
         switch (fieldName) {
             case "emailaddress":
@@ -36,7 +40,7 @@ public class AutomationPracticeSteps {
     }
 
     @When("^the user clicks on the \"([^\"]*)\" button$")
-   
+
     public void theUserClicksOnTheButton(String buttonName)  {
         switch (buttonName) {
             case "SignIn":
@@ -45,11 +49,18 @@ public class AutomationPracticeSteps {
             case "Submit":
                 automationPracticeAuthenticationPageActions.clickOnSubmitButton();
                 break;
+            case "Women":
+                automationPracticeProductDetailsPageActions.clickOnWomenButton();
+                break;
+            case "cart":
+                automationPracticeProductDetailsPageActions.clickOnCart();
+                break;
+
         }
     }
 
     @Then("^the user should see the corresponding \"([^\"]*)\"$")
-   
+
     public void theUserShouldSeeTheCorresponding(String expected) {
         switch (expected) {
             case "InvalidPassword":
@@ -67,6 +78,23 @@ public class AutomationPracticeSteps {
             case "Successful":
                 break;
         }
+    }
+
+    @When("^the user logs into the application successfully with \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void theUserLogsIntoTheApplicationSuccessfullyWithAnd(String emailAddress, String password) {
+        automationPracticeLandingPageActions.clickOnSignInButton();
+        automationPracticeAuthenticationPageActions.enterEmailAddress(emailAddress);
+        automationPracticeAuthenticationPageActions.enterPassword(password);
+    }
+
+
+    @And("^the user chooses the products with desired details \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
+    public void theUserChoosesTheProductsWithDesiredDetails(String dressNames, String quantities, String size) {
+        String[] sizeArray = size.split(", ");
+        String[] dressNameArray = dressNames.split(", ");
+        String[] quantityArray = quantities.split(", ");
+        automationPracticeProductDetailsPageActions.chooseTheDesiredProduct(dressNameArray, quantityArray, sizeArray );
+
     }
 }
 

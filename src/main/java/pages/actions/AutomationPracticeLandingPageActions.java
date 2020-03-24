@@ -1,13 +1,12 @@
 package pages.actions;
 
 import org.openqa.selenium.support.PageFactory;
-import pages.locators.AutomationPracticeAuthenticationPageLocators;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.locators.AutomationPracticeLandingPageLocators;
 import utils.SeleniumDriver;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
 
 public class AutomationPracticeLandingPageActions {
 
@@ -25,6 +24,7 @@ public class AutomationPracticeLandingPageActions {
     }
 
     public void clickOnSignInButton() {
+        SeleniumDriver.getWaitDriver().until(ExpectedConditions.elementToBeClickable(automationPracticeLandingPageLocators.signInButton));
         automationPracticeLandingPageLocators.signInButton.click();
         assertTrue(SeleniumDriver.getDriver().getCurrentUrl().contains("authentication"));
     }
