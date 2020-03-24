@@ -3,17 +3,13 @@ package pages.actions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import pages.locators.AutomationPracticeProductDetailsPageLocators;
 import pages.locators.AutomationPracticeShoppingCartPageLocators;
-
 import utils.SeleniumDriver;
 
-import java.awt.*;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class AutomationPracticeShoppingCartPageActions {
     AutomationPracticeShoppingCartPageLocators automationPracticeShoppingCartPageLocators = null;
@@ -38,8 +34,8 @@ public class AutomationPracticeShoppingCartPageActions {
         List<WebElement> productSet = automationPracticeShoppingCartPageLocators.productsSummaryTable;
         for(int i =0; i<sizeArray.length; i++ ) {
             String fullProductText = productSet.get(i).getText();
-            String sizeSubstringFromfullProductText = fullProductText.substring(fullProductText.indexOf("Size"),fullProductText.indexOf("Size")+9);
-            assertTrue(sizeSubstringFromfullProductText.contains(sizeArray[i]));
+            String sizeSubstringFromFullProductText = fullProductText.substring(fullProductText.indexOf("Size"),fullProductText.indexOf("Size")+9);
+            assertTrue(sizeSubstringFromFullProductText.contains(sizeArray[i]));
         }
     }
 

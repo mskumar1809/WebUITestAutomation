@@ -1,13 +1,9 @@
 package pages.actions;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.locators.AutomationPracticeAuthenticationPageLocators;
-import pages.locators.AutomationPracticeLandingPageLocators;
 import utils.SeleniumDriver;
-
 
 import static org.junit.Assert.assertTrue;
 
