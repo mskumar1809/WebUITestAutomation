@@ -11,4 +11,11 @@ public class AutomationPracticeShoppingCartPageLocators {
     @FindBy(how = How.XPATH, using = "//*[@id='cart_summary']/tbody/tr")
     public List<WebElement> productsSummaryTable;
 
+    @FindBy(how = How.XPATH, using = "//*[@title='Delete']")
+    public WebElement deleteButton;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='center_column']/p")
+    public WebElement cartEmpty;
+
+
 }

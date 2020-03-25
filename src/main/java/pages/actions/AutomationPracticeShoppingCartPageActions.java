@@ -1,11 +1,14 @@
 package pages.actions;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import pages.locators.AutomationPracticeShoppingCartPageLocators;
 import utils.SeleniumDriver;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -18,6 +21,26 @@ public class AutomationPracticeShoppingCartPageActions {
         this.automationPracticeShoppingCartPageLocators = new AutomationPracticeShoppingCartPageLocators();
         PageFactory.initElements(SeleniumDriver.getDriver(), automationPracticeShoppingCartPageLocators);
     }
+
+    public void verifyTheUpdatedProductDetails(String[] dressnames, String[] quantities){
+        List<String> quantityList = new ArrayList(Arrays.asList(quantities));
+        List<String> dressList = new ArrayList(Arrays.asList(dressnames));
+        String [] updatedDressnames;
+        if(quantityList.contains("0")){
+            if(quantityList.size() == 1 && dressList.size()==1){
+                String cartEmptyText = automationPracticeShoppingCartPageLocators.cartEmpty.getText();
+                assertTrue(cartEmptyText.contentEquals("Your shopping cart is empty."));
+            }else if (dressList.size()>1){
+                int positionOfZero = quantityList.indexOf("0");
+                dressList.remove(positionOfZero);
+                updatedDressnames = dressList.stream().toArray(String[]::new);
+                verifyTheProductNamesInShoppingCart(updatedDressnames);
+            }
+        }else {
+            verifyTheProductNamesInShoppingCart(dressnames);
+        }
+    }
+
 
     public void verifyTheProductNamesInShoppingCart(String [] dressNameArray){
         List<WebElement> productSet = automationPracticeShoppingCartPageLocators.productsSummaryTable;
@@ -41,8 +64,26 @@ public class AutomationPracticeShoppingCartPageActions {
 
     public void verifyTheProductQuantities(String [] quantityArray){
         for(int i = 1; i <= quantityArray.length; i++){
+
             WebElement tempElement = SeleniumDriver.getDriver().findElement(By.xpath("//table/tbody/tr["+i+"]/td[5]/input[2]"));
             assertTrue(tempElement.getAttribute("value").contentEquals(quantityArray[i-1]));
+        }
+    }
+
+    public void updateTheProductQuantities(String [] quantityArray) throws InterruptedException {
+        for(int i = 1; i <= quantityArray.length; i++) {
+            WebElement tempElement = SeleniumDriver.getDriver().findElement(By.xpath("//table/tbody/tr[" + i + "]/td[5]/input[2]"));
+            tempElement.clear();
+            if(quantityArray[i - 1].equalsIgnoreCase("0") ){
+                WebElement tempDeleteButton = SeleniumDriver.getDriver().findElement(By.xpath("//table/tbody/tr["+i+"]/td[7]/div/a"));
+                tempDeleteButton.click();
+                Thread.sleep(3000);
+                quantityArray = ArrayUtils.remove(quantityArray, Integer.parseInt(quantityArray[i - 1]));
+
+            }
+            else {
+                tempElement.sendKeys(quantityArray[i - 1]);
+            }
         }
     }
 }

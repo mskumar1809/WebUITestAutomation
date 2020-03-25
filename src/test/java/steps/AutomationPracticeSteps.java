@@ -111,6 +111,20 @@ public class AutomationPracticeSteps {
         automationPracticeShoppingCartPageActions.verifyTheProductsSizeInShoppingCart(sizeArray);
         automationPracticeShoppingCartPageActions.verifyTheProductQuantities(quantityArray);
     }
+
+    @When("^the user edits the Shopping-Cart with \"([^\"]*)\"$")
+    public void theUserEditsTheShoppingCartWith(String updatedQuantities) throws InterruptedException {
+        String[] quantityArray = updatedQuantities.split(", ");
+        automationPracticeShoppingCartPageActions.updateTheProductQuantities(quantityArray);
+    }
+
+
+    @Then("^the user should see the Shopping-Cart with updated values \"([^\"]*)\" \"([^\"]*)\"$")
+    public void theUserShouldSeeTheShoppingCartWithUpdatedValues(String dressNames, String quantities)  {
+        String[] dressNameArray = dressNames.split(", ");
+        String[] quantityArray = quantities.split(", ");
+        automationPracticeShoppingCartPageActions.verifyTheUpdatedProductDetails(dressNameArray,quantityArray);
+    }
 }
 
 
