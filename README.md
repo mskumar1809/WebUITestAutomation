@@ -9,8 +9,6 @@
 
 ```
 
-
-
 ***Tech Stack used in the project***
 ```
 1. Programming Language : Java
@@ -46,25 +44,31 @@
      `mvn test -Dexecution_mode=BS`
 ```
 
-***Video Logs***
+***Video Explaination***
 ```
- 1. Local Mode Execution
-    Below is the video of the local execution
- ```
-   https://drive.google.com/open?id=1lpeEve4pYI-YUW5xbVpJqTckHMu-5x6K
+ The Below video explains the 
+ 1. High level technical aspects of the project 
+ 2. Project Structure
+ 3. Test Cases
+ 4. Execution Details
+ 5. Reporting structure and reports
+ 6. Circles CI integration with current project 
  
-
+ ```
+   https://drive.google.com/open?id=1fw1IoYlS3Raa-YVeE6eMfKvvi79cTHMp
+ 
 ***Reporting***
 ```
-The HTML reports are automatically stored in the Extent Reports folder under Target folder in the rpoject after every execution
+The HTML reports are automatically stored in the Extent Reports folder under Target folder in the project after every execution
+
 ``` 
 
 ***ContinousIntegration***
 ```
 Used the Circles CI to integrate the project for CI, which would run all the tests and certify the build before any code is committed and merged.
-Below is the Document which shows the Circles CI integration and the builds status for every commit into master
+Below is the Circles-CI dashboard which shows the Circles CI integration and the builds status for every commit into master
 
-https://xyz
+https://app.circleci.com/pipelines/github/mskumar1809/ZulhkeTestAutomation/
 ```
 
 
