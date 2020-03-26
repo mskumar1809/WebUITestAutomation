@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e5b8c4-1757-49f2-900a-2b4ab2c5c7b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_061235.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_062015.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_064039.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_064510.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_065156.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_065320.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_065410.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_070244.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_070340.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_072121.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_072254.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_073206.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_073327.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_073429.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/22032020_082033.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Extent_Reports/screenshot-1584876850564.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RunCuke/cucumber.html/embedded0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RunCuke/cucumber.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/RunCuke/cucumber.html/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RunCuke/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/RunCuke/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Shopping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Shopping.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SeleniumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SeleniumDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +170,10 @@
     <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.805@0.23.1440.805" timestamp="1585024889265" />
     <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.807@0.23.1440.807" timestamp="1585008824690" />
     <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1584976525282" />
+    <state x="796" y="196" key="Maven.ArtifactSearchDialog" timestamp="1585206897717">
+      <screen x="0" y="23" width="1920" height="973" />
+    </state>
+    <state x="796" y="196" key="Maven.ArtifactSearchDialog/0.23.1920.973@0.23.1920.973" timestamp="1585206897717" />
     <state x="229" y="65" key="SettingsEditor" timestamp="1585032130331">
       <screen x="0" y="23" width="1440" height="793" />
     </state>
@@ -201,11 +182,12 @@
       <screen x="0" y="23" width="1440" height="793" />
     </state>
     <state width="700" height="383" key="XDebugger.FullValuePopup/0.23.1440.793@0.23.1440.793" timestamp="1585032404929" />
-    <state x="399" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1585055929735">
-      <screen x="0" y="23" width="1440" height="793" />
+    <state x="532" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1585222168453">
+      <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state x="399" y="255" key="com.intellij.ide.util.TipDialog/0.23.1440.793@0.23.1440.793" timestamp="1585055929735" />
     <state x="399" y="259" key="com.intellij.ide.util.TipDialog/0.23.1440.805@0.23.1440.805" timestamp="1584924514102" />
+    <state x="532" y="308" key="com.intellij.ide.util.TipDialog/0.23.1920.973@0.23.1920.973" timestamp="1585222168453" />
     <state x="29" y="120" key="new project wizard" timestamp="1585015381572">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
@@ -214,10 +196,11 @@
       <screen x="0" y="23" width="1440" height="800" />
     </state>
     <state x="477" y="355" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.23.1440.800@0.23.1440.800" timestamp="1584871501032" />
-    <state x="385" y="152" width="670" height="665" key="search.everywhere.popup" timestamp="1585036078228">
-      <screen x="0" y="23" width="1440" height="793" />
+    <state x="513" y="181" width="894" height="816" key="search.everywhere.popup" timestamp="1585215748190">
+      <screen x="0" y="23" width="1920" height="973" />
     </state>
     <state x="385" y="152" width="670" height="665" key="search.everywhere.popup/0.23.1440.793@0.23.1440.793" timestamp="1585036078228" />
     <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1584974374780" />
+    <state x="513" y="181" width="894" height="816" key="search.everywhere.popup/0.23.1920.973@0.23.1920.973" timestamp="1585215748190" />
   </component>
 </project>
