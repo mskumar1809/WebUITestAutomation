@@ -35,7 +35,7 @@ public class SeleniumDriver {
         if (executionMode == null) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
-            driver.manage().window().fullscreen();
+            driver.manage().window().maximize();
             waitDriver = new WebDriverWait(driver, TIMEOUT);
             driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
             return driver;
