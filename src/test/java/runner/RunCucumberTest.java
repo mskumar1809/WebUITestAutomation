@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features"
-        ,glue={"steps"}
+        ,glue= "steps"
         ,plugin = {"json:target/RunCuke/cucumber.json", "pretty", "html:target/RunCuke/cucumber.html","com.cucumber.listener.ExtentCucumberFormatter"})
 
 public class RunCucumberTest  {

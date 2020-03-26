@@ -1,7 +1,5 @@
 package steps;
 
-import cucumber.api.PendingException;
-import org.junit.Test;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

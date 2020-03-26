@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,8 +35,10 @@ public class SeleniumDriver {
 
         if (executionMode == null) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-            driver.manage().window().fullscreen();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--start-maximized");
+            driver = new ChromeDriver(options);
+            //driver.manage().window().maximize();
             waitDriver = new WebDriverWait(driver, TIMEOUT);
             driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
             return driver;
