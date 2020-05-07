@@ -67,7 +67,7 @@ The HTML reports are automatically stored in the Extent Reports folder under Tar
 Used the Circles CI to integrate the project for CI, which would run all the tests and certify the build before any code is committed and merged.
 Below is the Circles-CI dashboard which shows the Circles CI integration and the builds status for every commit into master
 
-https://app.circleci.com/pipelines/github/mskumar1809/ZulhkeTestAutomation/
+https://app.circleci.com/pipelines/github/mskumar1809/WebUITestAutomation
 ```
 
 
