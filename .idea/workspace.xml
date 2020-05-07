@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4e5b8c4-1757-49f2-900a-2b4ab2c5c7b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeAddressPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeOrderConfirmationPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeOrderSummaryPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticePaymentPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeShippingPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeAddressPageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeOrderConfirmationPageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeOrderSummaryPageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticePaymentPageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeShippingPageLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Checkout.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junit_xml/cucumber.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeShoppingCartPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/actions/AutomationPracticeShoppingCartPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeProductDetailsPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeProductDetailsPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeShoppingCartPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/locators/AutomationPracticeShoppingCartPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SeleniumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SeleniumDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunCucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AutomationPracticeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AutomationPracticeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SearchProducts_AddToCart_UpdateCart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +22,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1ZTXgxtIJVyn8AZM9TAKi2ybHTe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -211,9 +183,10 @@
     <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.805@0.23.1440.805" timestamp="1585024889265" />
     <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.807@0.23.1440.807" timestamp="1585008824690" />
     <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1584976525282" />
-    <state x="796" y="196" key="Maven.ArtifactSearchDialog" timestamp="1585206897717">
-      <screen x="0" y="23" width="1920" height="973" />
+    <state x="274" y="130" key="Maven.ArtifactSearchDialog" timestamp="1588858626875">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state x="274" y="130" key="Maven.ArtifactSearchDialog/0.23.1440.797@0.23.1440.797" timestamp="1588858626875" />
     <state x="796" y="196" key="Maven.ArtifactSearchDialog/0.23.1920.973@0.23.1920.973" timestamp="1585206897717" />
     <state x="305" y="75" key="SettingsEditor" timestamp="1585376535844">
       <screen x="0" y="23" width="1920" height="973" />
