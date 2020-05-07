@@ -1,7 +1,6 @@
-@AutomationPractice
+@login
 Feature: Acceptance Testing to validate the user login and shopping cart functionality
 
-  @login
   Scenario Outline: Validate the login functionality of Automation Practice
     Given the user is on the home page "http://automationpractice.com/index.php"
     When the user clicks on the "SignIn" button

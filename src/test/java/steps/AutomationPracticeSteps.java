@@ -5,11 +5,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pages.actions.AutomationPracticeAuthenticationPageActions;
-import pages.actions.AutomationPracticeLandingPageActions;
+import pages.actions.*;
 
-import pages.actions.AutomationPracticeProductDetailsPageActions;
-import pages.actions.AutomationPracticeShoppingCartPageActions;
 import utils.SeleniumDriver;
 
 public class AutomationPracticeSteps {
@@ -19,6 +16,11 @@ public class AutomationPracticeSteps {
     AutomationPracticeAuthenticationPageActions automationPracticeAuthenticationPageActions = new AutomationPracticeAuthenticationPageActions();
     AutomationPracticeProductDetailsPageActions automationPracticeProductDetailsPageActions = new AutomationPracticeProductDetailsPageActions();
     AutomationPracticeShoppingCartPageActions automationPracticeShoppingCartPageActions = new AutomationPracticeShoppingCartPageActions();
+    AutomationPracticeAddressPageActions automationPracticeAddressPageActions = new AutomationPracticeAddressPageActions();
+    AutomationPracticeShippingPageActions automationPracticeShippingPageActions = new AutomationPracticeShippingPageActions();
+    AutomationPracticePaymentPageActions automationPracticePaymentPageActions = new AutomationPracticePaymentPageActions();
+    AutomationPracticeOrderSummaryPageActions automationPracticeOrderSummaryPageActions = new AutomationPracticeOrderSummaryPageActions();
+    AutomationPracticeOrderConfirmationPageActions automationPracticeOrderConfirmationPageActions = new AutomationPracticeOrderConfirmationPageActions();
 
     @Given("^the user is on the home page \"([^\"]*)\"$")
     public void theUserIsOnTheHomePage(String BaseURL)   {
@@ -54,6 +56,17 @@ public class AutomationPracticeSteps {
                 break;
             case "cart":
                 automationPracticeProductDetailsPageActions.clickOnCart();
+                break;
+            case "proceed to checkout":
+                automationPracticeShoppingCartPageActions.clickOnProceedToCheckout();
+                automationPracticeAddressPageActions.clickOnProceedToCheckout();
+                automationPracticeShippingPageActions.acceptTermsAndClickOnProceedToCheckout();
+                break;
+            case "pay by check":
+                automationPracticePaymentPageActions.clickOnPayByCheck();
+                break;
+            case "confirm order":
+                automationPracticeOrderSummaryPageActions.clickOnConfirmOrderButton();
                 break;
 
         }
@@ -122,6 +135,13 @@ public class AutomationPracticeSteps {
         String[] dressNameArray = dressNames.split(", ");
         String[] quantityArray = quantities.split(", ");
         automationPracticeShoppingCartPageActions.verifyTheUpdatedProductDetails(dressNameArray,quantityArray);
+    }
+
+
+
+    @Then("^the user should see the order confirmation$")
+    public void theUserShouldSeeTheOrderConfirmation() {
+        automationPracticeOrderConfirmationPageActions.verifyTheOrderConfirmation();
     }
 }
 

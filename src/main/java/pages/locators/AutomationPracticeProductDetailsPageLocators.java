@@ -39,4 +39,6 @@ public class AutomationPracticeProductDetailsPageLocators {
     @FindBy(how = How.XPATH, using = "//*[@id='center_column']/ul/li[6]/div/div[2]/h5/a")
     public WebElement printedSummerDress1;
 
+
+
 }

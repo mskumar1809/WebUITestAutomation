@@ -4,6 +4,8 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import pages.locators.AutomationPracticeAddressPageLocators;
 import pages.locators.AutomationPracticeShoppingCartPageLocators;
 import utils.SeleniumDriver;
 
@@ -16,10 +18,13 @@ import static org.junit.Assert.assertTrue;
 
 public class AutomationPracticeShoppingCartPageActions {
     AutomationPracticeShoppingCartPageLocators automationPracticeShoppingCartPageLocators = null;
+    AutomationPracticeAddressPageLocators automationPracticeAddressPageLocators = null;
 
     public AutomationPracticeShoppingCartPageActions() {
         this.automationPracticeShoppingCartPageLocators = new AutomationPracticeShoppingCartPageLocators();
+        this.automationPracticeAddressPageLocators = new AutomationPracticeAddressPageLocators();
         PageFactory.initElements(SeleniumDriver.getDriver(), automationPracticeShoppingCartPageLocators);
+        PageFactory.initElements(SeleniumDriver.getDriver(), automationPracticeAddressPageLocators);
     }
 
     public void verifyTheUpdatedProductDetails(String[] dressnames, String[] quantities){
@@ -46,7 +51,7 @@ public class AutomationPracticeShoppingCartPageActions {
         List<WebElement> productSet = automationPracticeShoppingCartPageLocators.productsSummaryTable;
         int numberofProducts = dressNameArray.length;
         assertEquals(productSet.size(), numberofProducts);
-        for(int index =0; index<dressNameArray.length; index++ ) {
+        for(int index = 0; index<dressNameArray.length; index++ ) {
             String fullProductText = productSet.get(index).getText();
             String nameSubstringFromfullProductText = fullProductText.substring(0,fullProductText.indexOf("SKU")-1);
             assertTrue(dressNameArray[index].contains(nameSubstringFromfullProductText));
@@ -55,7 +60,7 @@ public class AutomationPracticeShoppingCartPageActions {
 
     public void verifyTheProductsSizeInShoppingCart(String [] sizeArray){
         List<WebElement> productSet = automationPracticeShoppingCartPageLocators.productsSummaryTable;
-        for(int i =0; i<sizeArray.length; i++ ) {
+        for(int i = 0; i<sizeArray.length; i++ ) {
             String fullProductText = productSet.get(i).getText();
             String sizeSubstringFromFullProductText = fullProductText.substring(fullProductText.indexOf("Size"),fullProductText.indexOf("Size")+9);
             assertTrue(sizeSubstringFromFullProductText.contains(sizeArray[i]));
@@ -85,5 +90,11 @@ public class AutomationPracticeShoppingCartPageActions {
                 tempElement.sendKeys(quantityArray[i - 1]);
             }
         }
+    }
+
+    public void clickOnProceedToCheckout(){
+        SeleniumDriver.getWaitDriver().until(ExpectedConditions.elementToBeClickable(automationPracticeShoppingCartPageLocators.proceedToCheckOutButton));
+        automationPracticeShoppingCartPageLocators.proceedToCheckOutButton.click();
+        assertTrue(automationPracticeAddressPageLocators.addressText.getText().equalsIgnoreCase("ADDRESSES"));
     }
 }

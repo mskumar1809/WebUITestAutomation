@@ -17,5 +17,10 @@ public class AutomationPracticeShoppingCartPageLocators {
     @FindBy(how = How.XPATH, using = "//*[@id='center_column']/p")
     public WebElement cartEmpty;
 
+    @FindBy(how = How.XPATH, using = "//*[@id='center_column']/p[2]/a[1]")
+    public WebElement proceedToCheckOutButton;
+
+
+
 
 }
