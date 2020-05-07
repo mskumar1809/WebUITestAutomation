@@ -1,11 +1,10 @@
-# ZulhkeTestAutomation
+# WebUITestAutomation
 
-***Requirements of the Assignment****
+***Objectives of the Assignment****
 ```
 1. Automate the UI tests for http://automationpractice.com/ using Selenium and Cucumber 
 2. Java must be used as the programming language. Use JUnit as the test runner
-3. Test the “Sign In” flow and basic “Add to cart” functionality
-4. The tests should run on “Chrome” browser
+3. The tests should run on “Chrome” browser
 
 ```
 
