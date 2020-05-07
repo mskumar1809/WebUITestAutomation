@@ -38,7 +38,6 @@ public class SeleniumDriver {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
             driver = new ChromeDriver(options);
-            //driver.manage().window().maximize();
             waitDriver = new WebDriverWait(driver, TIMEOUT);
             driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
             return driver;
@@ -48,7 +47,7 @@ public class SeleniumDriver {
             caps.setCapability("os_version", "Catalina");
             caps.setCapability("browser", "Chrome");
             caps.setCapability("browser_version", "80.0");
-            caps.setCapability("project", "NTUC Web Automation");
+            caps.setCapability("project", "Web Automation");
             caps.setCapability("build", "Build: "+ LocalDate.now());
             caps.setCapability("browserstack.local", "false");
             caps.setCapability("browserstack.debug", "true");
