@@ -5,9 +5,12 @@ workflows:
   maven_test:
     jobs:
       - maven/test
-      - echo $PWD
-      - cd target
-      - echo $(ls)
+run:
+  - command: echo($pwd)
+      cd target
+      echo($ls)
+
+
       
     
       
