@@ -5,4 +5,10 @@ workflows:
   maven_test:
     jobs:
       - maven/test:
-          test_results_path: target/cucumber-reports
+      - run:
+          name: Check Details
+          command: |
+            pwd
+            cd target
+            ls
+          
