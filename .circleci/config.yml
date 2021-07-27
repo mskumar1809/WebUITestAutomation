@@ -4,11 +4,13 @@ version: 2.1
 workflows:
   maven_test:
     jobs:
-      - maven/test:
-      - run:
-          name: Check Details
-          command: |
+      - maven/test
+  - run:
+      name: Check Details
+        command: | 
             pwd
             cd target
             ls
+    
+      
           
