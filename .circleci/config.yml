@@ -5,12 +5,11 @@ workflows:
   maven_test:
     jobs:
       - maven/test
-  - run:
-      name: Check Details
-        command: | 
-            pwd
-            cd target
-            ls
+-run:
+  command: |
+    pwd
+    cd target
+    ls
     
       
           
