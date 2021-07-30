@@ -9,11 +9,6 @@ RUN apt-get install -y p7zip \
     zip \
     unzip \
     bzip2
-
-#Version numbers
-ARG CHROME_VERSION=92.0.4515.107
-ARG CHROMDRIVER_VERSION=92.0.4515.43
-
 #Step 2: Install Chrome
 RUN curl http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_$CHROME_VERSION-1_amd64.deb -o /chrome.deb
 RUN dpkg -i /chrome.deb
