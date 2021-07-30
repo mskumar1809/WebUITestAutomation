@@ -37,7 +37,7 @@ public class SeleniumDriver {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
-            driver = new ChromeDriver(options);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),options);
             waitDriver = new WebDriverWait(driver, TIMEOUT);
             driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
             return driver;
