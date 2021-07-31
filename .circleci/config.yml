@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/openjdk:1.16.01-browsers
+      - image: cimg/openjdk:16.0.1-browsers
     steps:
       - browser-tools/install-browser-tools
       - checkout
