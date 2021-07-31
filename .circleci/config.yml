@@ -1,14 +1,18 @@
-orbs:
-  maven: circleci/maven@1.2.0
 version: 2.1
-workflows:
-  maven_test:
-    jobs:
-      - maven/test
-run:
-  - command: echo($pwd)
-      cd target
-      echo($ls)
+orbs:
+  browser-tools: circleci/browser-tools@1.1
+jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:1.16.01-browsers
+    steps:
+      - browser-tools/install-browser-tools
+      - checkout
+      - run: |
+          node --version
+          java --version
+          google-chrome --version
+          mvn clean test
 
 
       
